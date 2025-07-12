@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: rgba(191, 189, 189, 0.51);
+    padding: 20px;
+}
+
+
+#card_obj {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.cardsContainer:hover {
+    transform: translateY(-5px);
+}
+
+
+.recipeImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.recipeContainer {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.recipeContainer ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
